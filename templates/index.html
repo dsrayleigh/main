@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+</head>
+<body>
+    <form action="BUY" , method="POST">
+        {% csrf_token %} 
+        <table>
+            <tr>
+                <td>aloo (rs.{{ aloo_rate}}per kg Quantity : )</td>
+                <td><input type="number" placeholder = "in kgs" name = "aloo_num"></td>
+            </tr>
+            <tr>
+                <td>loki (rs.{{loki_rate}}per kg Quantity : )</td>
+                <td><input type="number" placeholder = "in kgs" name = "loki_num"></td>
+            </tr>
+            <tr>
+                <td>mirch (rs.{{mirch_rate}}per kg Quantity : )</td>
+                <td><input type="number" placeholder = "in kgs" name = "mirch_num"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name = "BUY" value="BUY"></td>
+            </tr>
+        </table>
+                </form>
+</body>
+</html>
